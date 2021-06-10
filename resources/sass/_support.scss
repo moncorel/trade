@@ -1,0 +1,19 @@
+.message {
+    background: #fff;
+    border-radius: 5px;
+    padding: .5rem;
+    box-shadow: 0 .75rem 1.75rem -.75rem rgb(81, 68, 255);
+    &-sent {
+        background: #c7fcff
+    }
+    &-received {
+        background: lightgray;
+    }
+    &-text {
+        &-block {
+            background: rgba(100, 100, 100, 0.1);
+        }
+        font-size: 14px;
+        color: rgba(4, 14, 44, 0.75);
+    }
+}

@@ -1,0 +1,96 @@
+.currency-item {
+    display: block;
+    margin-top: 30px !important;
+    padding: 20px 15px;
+    //background: #6c1d1d;
+    border-radius: 5px;
+    box-shadow: 0 0 3px -1px $main-shadow-color, 0 15px 25px -15px $main-shadow-color;
+    .logo-img {
+        max-height: 24px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.wallet-info {
+    display: inline-block;
+    position: relative;
+    padding: .5rem .25rem .5rem .25rem;
+    width: 100%;
+    border-radius: 5px;
+    input {
+        cursor: default;
+        display: inline-block;
+        padding: .5rem;
+        font-size: 85%;
+        border: none;
+        width: calc(100% - 1.5rem);
+        background: none;
+        outline: none;
+        z-index: 1;
+        transition: 0.3s;
+    }
+    &-dark {
+        background: #00062b;
+        input {
+            color: gray;
+        }
+        &:hover input {
+            color: white;
+        }
+        i.wallet-dots, i.fas.fa-copy {
+            color: white;
+        }
+    }
+    &-light {
+        background: white;
+        i.wallet-dots, i.fas.fa-copy {
+            color: $main-icon-color;
+        }
+        input {
+            color: black;
+        }
+        &:hover {
+            input {
+                color: white;
+            }
+            i.wallet-dots, i.fas.fa-copy {
+                color: white;
+            }
+        }
+    }
+    box-shadow:
+        0 0 3px -1px $main-shadow-color,
+        0 15px 25px -15px $main-shadow-color,
+        0 0 0 1px $main-shadow-color;
+    transition: all .3s ease;
+    &:hover {
+        background: #e23751;
+    }
+}
+
+
+.wallet-info i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    margin-top: -.625rem;
+    width: 1.25rem;
+    line-height: 1.25rem;
+    z-index: 2;
+}
+
+.wallet-info .fa-copy {
+    right: .5rem;
+    cursor: pointer;
+}
+
+.user-wallets {
+    //background: #00062b;
+    box-shadow: 0 0 3px -1px $main-shadow-color, 0 15px 25px -15px $main-shadow-color;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,104 @@
+.bg-block {
+    background: rgb(59, 21, 26);
+    border-radius: 5px;
+    box-shadow: 0 0 3px -1px $main-shadow-color, 0 15px 25px -15px $main-shadow-color;
+}
+
+.status {
+    &-processing {
+        color: #ffc107;
+        i {
+            color: #ffc107;
+        }
+    }
+    &-approved {
+        color: green;
+        i {
+            color: green;
+        }
+    }
+    &-failed {
+        color: red;
+        i {
+            color: red;
+        }
+    }
+}
+
+.personal-data-table {
+    th, td {
+        padding: 16px;
+        text-align: center;
+        vertical-align: middle;
+    }
+    tr {
+        &:first-child {
+            th {
+                border-top: none;
+                &:first-child {
+                    border-radius: 10px 0 0 0;
+                }
+                &:last-child {
+                    border-radius: 0 10px 0 0;
+                }
+            }
+        }
+        &:last-child {
+            td {
+                &:first-child {
+                    border-radius: 0 0 0 10px;
+                }
+                &:last-child {
+                    border-radius: 0 0 10px 0;
+                }
+            }
+        }
+    }
+    th {
+        font-size: 16px;
+        border-top: none;
+        color: #fff;
+        background: $main-color;
+    }
+    td {
+        background: #fff;
+        margin: 0;
+        vertical-align: middle;
+        text-align: center;
+        i {
+            font-size: 12px;
+            font-style: normal;
+        }
+    }
+}
+
+.copied {
+    right: 0;
+    padding: .25rem .5rem;
+    font-size: 75%;
+    content: 'Copied to clipboard';
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.copied, .copied:before {
+    position: absolute;
+    top: 90%;
+    background: rgba(4,14,44,1);
+    box-shadow: 0 0 3px -1px rgba(81,68,255,1), 0 15px 25px -15px rgba(81,68,255,1), 0 0 0 1px rgba(81,68,255,1);
+    z-index: 1;
+}
+
+.settings-avatar-image img {
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #fff;
+}
+
+.deposit-text {
+    font-size: 24px;
+    color: #d3d3d3;
+}

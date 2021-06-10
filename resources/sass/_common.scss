@@ -1,0 +1,90 @@
+.wrapper {
+    background: #370c1d;
+}
+
+.cursor {
+    &-pointer {
+        cursor: pointer;
+    }
+}
+
+.max {
+    &-height-200 {
+        max-height: 200px;
+    }
+    &-width-800 {
+        max-width: 800px;
+    }
+}
+
+.font {
+    &-16 {
+        font-size: 16px;
+    }
+    &-12 {
+        font-size: 12px;
+    }
+    &-24 {
+        font-size: 24px;
+    }
+    &-40 {
+        font-size: 40px;
+    }
+    &-50 {
+        font-size: 50px;
+    }
+    &-55 {
+        font-size: 55px;
+    }
+    &-4-rem {
+        font-size: 4rem;
+    }
+}
+
+.w {
+    &-20 {
+        width: 20%;
+    }
+    &-40 {
+        width: 40%;
+    }
+}
+
+.square-image {
+    &-24 {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.color {
+    &-primary {
+        color: $main-color;
+    }
+}
+
+label i, form i {
+    color: $main-color;
+}
+
+.about, .options{
+    background: $main-color;
+    opacity: 0.8;
+    padding: 20px 40px 50px 40px;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 0 3px -1px $main-shadow-color, 0 15px 25px -15px $main-shadow-color;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .bottom-bg {
+        background: none !important;
+    }
+    .footer {
+        bottom: 0;
+        background: url(../images/bg_bot1280.jpg) no-repeat 50% 100%;
+        background-size: 200%;
+        z-index: 1;
+    }
+}

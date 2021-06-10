@@ -1,0 +1,47 @@
+.activeBtn {
+    padding: .75rem 1.5rem;
+    background: $main-color;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    transition: all .3s ease;
+    color: #fff;
+    &:hover {
+        box-shadow: 0 .75rem 1.75rem -.75rem $main-shadow-color;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.disableBtn {
+    background: #dc3545;
+    &:hover {
+        background: #dc3545;
+        box-shadow: 0 0.75rem 1.75rem -1rem red;
+    }
+}
+
+.clickedBtn {
+    box-shadow: 0 .75rem 1.75rem -.75rem $main-shadow-color;
+    text-decoration: none;
+    color: white;
+}
+
+.none-active {
+    color: white;
+    background: transparent;
+    border: 1px solid $main-color;
+}
+.none-active:hover {
+    background: $main-color;
+}
+
+.text {
+    &-black {
+        color: black;
+    }
+    &-red {
+        color: red;
+    }
+}

@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  web:
+    container_name: chartrade_docker_web
+    build:
+      context: ./docker/web
+    ports:
+      - 8090:80
+    volumes:
+      - ./:/var/www/app
+
+  db:
+    image: mysql
+    container_name: mysql
+    tty: true
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: chartrade
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345678
+      MYSQL_ROOT_PASSWORD: 12345678
+    ports:
+      - "4306:3306"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

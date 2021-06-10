@@ -1,0 +1,15 @@
+.modal {
+    padding: 0 20px;
+    &-content {
+        background: rgba(4,14,44,1) !important;
+        border-radius: 5px;
+        box-shadow: 0 0 3px -1px rgba(81,68,255,1), 0 25px 55px -25px rgba(81,68,255,1);
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog.max-width-800 {
+        max-width: 800px;
+        margin: 1.75rem auto;
+    }
+}
